@@ -1,0 +1,22 @@
+/*--
+	Color styles
+--*/
+.pz-color-bg , .left-header_social li:before , .pz-sidebar:after , .pz-hero-corner:after , .pz-hero-corner-dec , .pz-hero-corner-dec:after , .hero-slider-wrap_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:before , .pz-tc-dots .swiper-pagination-bullet.swiper-pagination-bullet-active:before , .pz-scroller , .nhw-col.menuhol-dec-vis:before , .pz-share-icon , .folio-list-title h2:before , .single-page-title h1:before , .hero-section:after , .pz-scroll-nav-wrap li a:after , .ci_details:before , .accordion a.toggle span:before, .accordion a.toggle span:after , .pz-skillbar , .line-item:first-child:before , .line-item:last-child:before , .hero-corner-dec2 , .pz-hero-decor-num:before , .parallax-circle:before , .pz-fixed-col-title h2:before , .pz-separator:after , .pz-section-title:before , .pz-separator span , .pz-pdcw-list li:before , .pz-process-item:before , .pz-card-carousel .swiper-pagination-bullet.swiper-pagination-bullet-active:before , .fixed-bottom-panel .gallery-filters a.gallery-filter-active:after , .grid-det_link:before , .swiper-scrollbar-drag , .list div.list-btn i , .fwc-title:before , .pz-content-nav li a.rn:before , .fs-slider-wrap_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:before , .fs-slider-item .pz-hero-wrap:before , .fhhw .pz-hero-wrap:before , .pagination a:after , .ss-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active , .pz-hero-sec-dec , .pz-start-btn:before , .pz-grid-carousel-title h3:before , .pz-promo-wrap:before , .pz-promo-title:after , .pz-cursor-item:before , .pz-social li a:hover , .pz-pl-row span.pz-pl-row-anim2 , .hiddec-anim:before , .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {
+    background: #F57500;
+}
+
+.pz-nav-button:hover .pz-nav-btn-label , .header-contacts li a , .pz-hero-wrap h1 span , .hsc:hover, .hs_counter .current , .pz-scroll-notifer i , .pz-btn:after , .hsc_pp , .pz-sliding-menu a.pz-act-link , .pz-sliding-menu a.back:before , .pz-share-close , .hero-start-link i , .pz-totop-btn , .video-box-btn , .column-inner-small h4 span.cis_number , .box-media-zoom , .pz-start-btn i , .clone-counter:before , .pz-section-title h3 span , .pz-video-link i , .pz-process-icon i , .pz-process-num , .pz-show-phdc:hover , .pz-close-pdcw:hover , .pz-carousel-ctrl , .pz-team-social li a , .pz-testi-num , .pz-tc-btn , .pz-section-counter div.sc_current , .submen-dec:before , .leaflet-touch .leaflet-bar a , .contact-details li a:hover , .close-contact_form , .aside-show_cf, .leaflet-container a.leaflet-popup-close-button , .grid-det_category a , .grid-det_link i , .grid-media-zoom , .fcc_column div.all-album , .fs-folio-counter div.all-album , .pz-show-details i , .fw-carousel-counter span.j2total , .fwcb , .next-project-swiper-link span , .pz-show-info:hover span , .closedet_style , .pz-content-nav li a i , .project-details ul li a , .thumb-img:after , .project-details ul:after , .pz-share-btn:hover span , .fsc , .hsc_pp2 , .accordion a.toggle.pz-act-accordion , .pz-promo-button a , .hdyn_gal i , .pagination a:hover , .pagination a.current-page , .post-header a , .post-link i , .pz-blog-btn i , .pz-blog-search button , .post-det-num , .ss-slider-cont , .pr-tags span , .pz-blog-title-opt li a:hover , blockquote:before , .comment-num , .pz-grid-carousel-title h3 a:hover , hero-decor-let span , .pz-facts-wrap .pz-stat-item:before , .hsc_total , .contacts-btn , .pz-filter-btn i , .pz-social li a , .pz-loader-count , .lg-actions .lg-next, .lg-actions .lg-prev , #message p strong {
+    color: #F57500;
+}
+
+.pz-start-btn , blockquote {
+    border-color: #F57500;
+}
+
+.pz-hero-corner , .pz-spinner:before , .pz-loading-text-wrap:before {
+    border-left-color: #F57500;
+}
+
+.pz-hero-corner , .pz-spinner:before , .pz-loading-text-wrap:before {
+    border-right-color: #F57500;
+}
