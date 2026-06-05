@@ -8,153 +8,144 @@
 
         <title>Partnrz BV — Share your deck</title>
         <meta name="description" content="Ready to share your deck? Submit your startup pitch to Partnrz. We review early-stage tech & software ventures with speed, clarity, and hands-on involvement.">
-
         <link rel="canonical" href="/pitch">
 
-        <link rel="icon" href="/assets/img/favicons/favicon-dark.png?v=1.2" sizes="32x32" media="(prefers-color-scheme: dark)">
-        <link rel="icon" href="/assets/img/favicons/favicon-dark.png?v=1.2" sizes="16x16" media="(prefers-color-scheme: dark)">
-        <link rel="icon" href="/assets/img/favicons/favicon-light.png?v=1.2" sizes="32x32" media="(prefers-color-scheme: light)">
-        <link rel="icon" href="/assets/img/favicons/favicon-light.png?v=1.2" sizes="16x16" media="(prefers-color-scheme: light)">
+        <link rel="icon" href="/assets/img/favicons/favicon-dark.png" sizes="32x32" media="(prefers-color-scheme: dark)">
+        <link rel="icon" href="/assets/img/favicons/favicon-light.png" sizes="32x32" media="(prefers-color-scheme: light)">
 
         <meta property="og:title" content="Partnrz BV — Share your deck">
         <meta property="og:description" content="Ready to share your deck? Submit your startup pitch to Partnrz. We review early-stage tech & software ventures with speed, clarity, and hands-on involvement.">
-        <meta property="og:image" content="https://www.partnrz.com/assets/img/og/dark/pitch.webp?v=1.2">
+        <meta property="og:image" content="/assets/img/og/dark/pitch.webp">
         <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.partnrz.com/pitch">
 
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Partnrz BV — Share your deck">
-        <meta name="twitter:description" content="Ready to share your deck? Submit your startup pitch to Partnrz. We review early-stage tech & software ventures with speed, clarity, and hands-on involvement.">
-        <meta name="twitter:image" content="/assets/img/og/dark/pitch.webp?v=1.2">
+        <meta name="twitter:image" content="/assets/img/og/dark/pitch.webp">
 
-        <link rel="preload" as="image" href="/assets/img/logo-dark.webp?v=1.2" media="(prefers-color-scheme: dark)">
-        <link rel="preload" as="image" href="/assets/img/logo-light.webp?v=1.2" media="(prefers-color-scheme: light)">
-        <link rel="preload" as="image" href="/assets/img/bg/partnrz-hero-dark.webp?v=1.2" media="(prefers-color-scheme: dark)">
-        <link rel="preload" as="image" href="/assets/img/bg/partnrz-hero-light.webp?v=1.2" media="(prefers-color-scheme: light)">
+        <link rel="preload" as="image" href="/assets/img/logo-dark.webp" media="(prefers-color-scheme: dark)">
+        <link rel="preload" as="image" href="/assets/img/logo-light.webp" media="(prefers-color-scheme: light)">
+        <link rel="preload" as="image" href="/assets/img/bg/partnrz-hero-dark.webp" media="(prefers-color-scheme: dark)">
+        <link rel="preload" as="image" href="/assets/img/bg/partnrz-hero-light.webp" media="(prefers-color-scheme: light)">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link type="text/css" rel="stylesheet" href="/assets/css/plugins.css?v=1.2">
-        <link type="text/css" rel="stylesheet" href="/assets/css/base.css?v=1.2">
-        <link type="text/css" rel="stylesheet" href="/assets/css/variables.css?v=1.2">
-        <link type="text/css" rel="stylesheet" href="/assets/css/partnrz.css?v=1.2">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+        <link rel="stylesheet" href="/assets/css/base.css">
+        <link rel="stylesheet" href="/assets/css/partnrz.css">
     </head>
 
     <body>
-        <!--<div class="pz-loader">
-    <div class="pz-loading-text-wrap "><span class="pz-loading-text">Load<strong>ing</strong></span> <span class="pz-loader-count">0</span></div>
-    <div class="pz-loader-anim"></div>
-    <div class="pz-loader-anim2 pz-color-bg"></div>
-</div>-->
         <div id="main">
-            <header class="pz-header">
-    <a href="/" class="ajax pz-logo-wrap"><img src="/assets/img/logo-dark.webp" alt="Partnrz BV" /></a>
+            <header class="pzHeader">
+                <a href="/" class="ajax pzLogoWrap"><img src="/assets/img/logo-dark.webp" alt="Partnrz BV" /></a>
 
-    <button id="themeToggle" class="theme-toggle" aria-label="Switch theme" title="Switch theme">
-        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-        </svg>
-        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"></circle>
-            <g stroke-linecap="round">
-                <line x1="12" y1="2"  x2="12" y2="4"></line>
-                <line x1="12" y1="20" x2="12" y2="22"></line>
-                <line x1="2"  y1="12" x2="4"  y2="12"></line>
-                <line x1="20" y1="12" x2="22" y2="12"></line>
-                <line x1="4.22" y1="4.22"  x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"></line>
-            </g>
-        </svg>
-    </button>
+                <button id="themeToggle" class="themeToggle" aria-label="Switch theme" title="Switch theme">
+                    <svg class="iconMoon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                    <svg class="iconSun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <g stroke-linecap="round">
+                            <line x1="12" y1="2"  x2="12" y2="4"></line>
+                            <line x1="12" y1="20" x2="12" y2="22"></line>
+                            <line x1="2"  y1="12" x2="4"  y2="12"></line>
+                            <line x1="20" y1="12" x2="22" y2="12"></line>
+                            <line x1="4.22" y1="4.22"  x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"></line>
+                        </g>
+                    </svg>
+                </button>
 
-    <div class="pz-nav-button pz-btn-wrap">
-        <span  class="pz-ncs"></span>
-        <span class="pz-nos"></span>
-        <span class="pz-nbs"></span>
-        <div class="pz-nav-btn-label">Menu</div>
-    </div>
-</header><aside class="pz-sidebar">
-    <span class="pz-sidebar-dec pz-color-bg"></span>
-    <nav class="pz-sidebar-nav pz-desktop-only" aria-label="Primary">
-        <ul>
-            <li><a href="/index.html" class="ajax pz-act-link">Home</a></li>
-            <li><a href="/criteria.html" class="ajax">Criteria</a></li>
-            <li><a href="/pitch.html" class="ajax pitch-link"><span>Pitch</span></a></li>
-        </ul>
-    </nav>
-</aside>
-            <div class="pz-share-btn pz-showshare pz-color-bg"><span>Share <i class="fas fa-plus"></i></span></div>
+                <div class="pzNavButton pzBtnWrap">
+                    <span  class="pzNcs"></span>
+                    <span class="pzNos"></span>
+                    <span class="pzNbs"></span>
+                    <div class="pzNavBtnLabel">Menu</div>
+                </div>
+            </header>
+            <aside class="pzSidebar">
+                <span class="pzSidebarDec pzColorBg"></span>
+                <nav class="pzSidebarNav pzDesktopOnly" aria-label="Primary">
+                    <ul>
+                        <li><a href="/index.html" class="ajax pzActLink">Home</a></li>
+                        <li><a href="/criteria.html" class="ajax">Criteria</a></li>
+                        <li><a href="/pitch.html" class="ajax pitchLink"><span>Pitch</span></a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="pzShareBtn pzShowshare pzColorBg"><span>Share <i class="fas fa-plus"></i></span></div>
 
-            <div class="pz-hero-corner-dec">
-                <div class="pz-page-subtitle"><span></span></div>
+            <div class="pzHeroCornerDec">
+                <div class="pzPageSubtitle"><span>Share Your Deck</span></div>
             </div>
 
             <div id="wrapper">
-                <div class="pz-nav-holder">
-    <div class="pz-nav-holder-wrap pz-btn-wrap">
-        <div class="pz-nav-container pz-sliding-menu pz-fl-wrap">
-            <nav class="pz-nav-inner" id="menu">
-                <ul>
-                    <li><a href="/index.html" class="ajax pz-act-link">Home</a></li>
-                    <li><a href="/criteria.html" class="ajax">Criteria</a></li>
-                    <li><a href="/pitch.html" class="ajax">Pitch</a></li>
-                </ul>
-            </nav>
-        </div>
+                <div class="pzNavHolder">
+                    <div class="pzNavHolderWrap pzBtnWrap">
+                        <div class="pzNavContainer pzSlidingMenu pzFlWrap">
+                            <nav class="pzNavInner" id="menu">
+                                <ul>
+                                    <li><a href="/index.html" class="ajax pzActLink">Home</a></li>
+                                    <li><a href="/criteria.html" class="ajax">Criteria</a></li>
+                                    <li><a href="/pitch.html" class="ajax">Pitch</a></li>
+                                </ul>
+                            </nav>
+                        </div>
 
-        <div class="pz-nav-footer">
-            <span>
-                <a href="/terms.html" class="ajax">Terms</a> &nbsp;•&nbsp; 
-                <a href="/privacy.html" class="ajax">Privacy</a> &nbsp;•&nbsp; 
-                <a href="/cookies.html" class="ajax">Cookies</a>
-            </span><br>
+                        <div class="pzNavFooter">
+                            <span>
+                                <a href="/terms.html" class="ajax">Terms</a> &nbsp;•&nbsp;
+                                <a href="/privacy.html" class="ajax">Privacy</a> &nbsp;•&nbsp;
+                                <a href="/cookies.html" class="ajax">Cookies</a>
+                            </span><br>
 
-            <span class="copyline">
-                Copyright &copy; Partnrz BV 2026                <span class="copyline-extra"> / All rights reserved.</span>
-            </span>
-        </div>
-        <div class="pz-nav-holder-line"></div>
-        <div class="pz-nav-holder-dec"></div>
-    </div>
-</div>
+                            <span class="copyLine">
+                                Copyright &copy; Partnrz BV 2026                <span class="copyLineExtra"> / All rights reserved.</span>
+                            </span>
+                        </div>
+                        <div class="pzNavHolderLine"></div>
+                        <div class="pzNavHolderDec"></div>
+                    </div>
+                </div>
 
-<div class="pz-nav-overlay"></div>
-                <div class="pz-content pitch"  data-pagetitle="Share your deck">
-                    <div class="pz-scroll-nav">
-                        <nav class="pz-scroll-init pz-scroll-nav-wrap">
-                            <ul class="no-list-style init_hidden_filter">
-                                <li><a class="pz-scroll-link fbgs pz-act-sec" href="#sec1" data-bgtext="01"><span>Invest</span></a></li>
-                                <li><a class="pz-scroll-link fbgs" href="#sec2" data-bgtext="02"><span>What to include</span></a></li>
-                                <li><a class="pz-scroll-link fbgs" href="#sec3" data-bgtext="03"><span>Pitch form</span></a></li>
-                                <li><a class="pz-scroll-link fbgs" href="#sec4" data-bgtext="04"><span>Process</span></a></li>
-                                <li><a class="pz-scroll-link fbgs" href="#sec5" data-bgtext="05"><span>Faqs</span></a></li>
+                <div class="pzNavOverlay"></div>
+                <div class="pzContent pitch"  data-pagetitle="Share your deck">
+                    <div class="pzScrollNav">
+                        <nav class="pzScrollInit pzScrollNavWrap">
+                            <ul class="noListStyle initHiddenFilter">
+                                <li><a class="pzScrollLink fbgs pzActSec" href="#sec1" data-bgtext="01"><span>Invest</span></a></li>
+                                <li><a class="pzScrollLink fbgs" href="#sec2" data-bgtext="02"><span>What to include</span></a></li>
+                                <li><a class="pzScrollLink fbgs" href="#sec3" data-bgtext="03"><span>Pitch form</span></a></li>
+                                <li><a class="pzScrollLink fbgs" href="#sec4" data-bgtext="04"><span>Process</span></a></li>
+                                <li><a class="pzScrollLink fbgs" href="#sec5" data-bgtext="05"><span>Faqs</span></a></li>
                             </ul>
-                            <div class="pz-filter-btn pz-act-filter"><i class="fas fa-sort"></i> Filter </div>
+                            <div class="pzFilterBtn pzActFilter"><i class="fas fa-sort"></i> Filter </div>
                         </nav>
                     </div>
 
-                    <div class="pz-hero-sec-dec pz-color-bg">
-                        <div class="pz-progress-dot">
+                    <div class="pzHeroSecDec pzColorBg">
+                        <div class="pzProgressDot">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
-                                <circle cx="16" cy="16" r="15.9155" class="pz-progress-bg" />
-                                <circle cx="16" cy="16" r="15.9155" class="pz-progress-fill pz-js-progress" />
+                                <circle cx="16" cy="16" r="15.9155" class="pzProgressBg" />
+                                <circle cx="16" cy="16" r="15.9155" class="pzProgressFill pzJsProgress" />
                             </svg>
                         </div>
                     </div>
 
-                    <div class="pz-fixed-col-wrap">
-                        <div class="pr-bg"></div>
+                    <div class="pzFixedColWrap">
+                        <div class="prBg"></div>
 
-                        <div class="pz-fixed-col-content">
-                            <div class="pz-slideshow">
-                                <div class="pz-slideshow-wrap pz-fl-wrap pz-full-height">
+                        <div class="pzFixedColContent">
+                            <div class="pzSlideshow">
+                                <div class="pzSlideshowWrap pzFlWrap pzFullHeight">
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <div class="pz-ms-item pz-fl-wrap">
-                                                    <div class="pz-bg pz-par-elem" data-bg="/assets/img/bg/partnrz-hero-dark.webp?v=1.2"></div>
+                                                <div class="pzMsItem pzFlWrap">
+                                                    <div class="pzBg pzParElem" data-bg="/assets/img/bg/partnrz-hero-dark.webp"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -162,85 +153,85 @@
                                 </div>
                             </div>
 
-                            <div class="pz-overlay"></div>
+                            <div class="pzOverlay"></div>
 
-                            <div class="pz-progress-wrap pz-bot-elem">
-                                <div class="pz-progress-bar"></div>
+                            <div class="pzProgressWrap pzBotElem">
+                                <div class="pzProgressBar"></div>
                             </div>
 
-                            <div class="pz-fixed-col-title first-tile_load">
+                            <div class="pzFixedColTitle firstTileLoad">
                                 <h2>Share<br>your deck</h2>
                                 <p>We back early-stage technology & software founders with capital, network and hands-on support. Lead or co-lead. First response within two business days.</p>
-                                <button type="button" class="pz-btn pz-color-bg pz-fl-btn js-scroll" data-target="#sec3"><span>Submit now</span></button>
+                                <button type="button" class="pzBtn pzColorBg pzFlBtn jsScroll" data-target="#sec3"><span>Submit now</span></button>
                             </div>
 
-                            <div class="pz-fixed-col-dec"></div>
-                            <div class="pz-scroll-notifer"></div>
-                            <div class="pz-section-counter">
-                                <div class="sc_current"><span>01</span></div>
-                                <div class="sc_total"></div>
+                            <div class="pzFixedColDec"></div>
+                            <div class="pzScrollNotifer"></div>
+                            <div class="pzSectionCounter">
+                                <div class="scCurrent"><span>01</span></div>
+                                <div class="scTotal"></div>
                             </div>
-                            <div class="pz-card-carousel-dots pz-card-carousel"></div>
-                        </div>                                  
+                            <div class="pzCardCarouselDots pzCardCarousel"></div>
+                        </div>
                     </div>
 
-                    <div class="pz-col-wrap">
-                        <div class="pz-col-wrap-container pz-fl-wrap">
-                            <div class="pz-col-dec"></div>
+                    <div class="pzColWrap">
+                        <div class="pzColWrapContainer pzFlWrap">
+                            <div class="pzColDec"></div>
 
-                            <section class="pz-scroll-sec" id="sec1">
+                            <section class="pzScrollSec" id="sec1">
                                 <div class="container">
-                                    <div class="pz-section-title">
+                                    <div class="pzSectionTitle">
                                         <h3>Is there a fit?</h3>
-                                        <p>Fast, founder-friendly, and decisive. If there’s a fit, you’ll hear from us quickly.</p>
+                                        <p>Fast, founder-friendly, and decisive. If there's a fit, you'll hear from us quickly.</p>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-lg-3 col-md-6 facts-div">
-                                            <div class="pz-stat-item">
+                                        <div class="col-lg-3 col-md-6 factsDiv">
+                                            <div class="pzStatItem">
                                                 <h6>Stage</h6>
                                                 <p>Pre-seed to Series A (seed extensions selectively).</p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 facts-div">
-                                            <div class="pz-stat-item">
+                                        <div class="col-lg-3 col-md-6 factsDiv">
+                                            <div class="pzStatItem">
                                                 <h6>Role</h6>
                                                 <p>Lead or co-lead with follow-on capacity.</p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 facts-div">
-                                            <div class="pz-stat-item">
+                                        <div class="col-lg-3 col-md-6 factsDiv">
+                                            <div class="pzStatItem">
                                                 <h6>Focus</h6>
                                                 <p>B2B SaaS, devtools, applied AI, fintech infra, vertical software, marketplaces.</p>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 facts-div">
-                                            <div class="pz-stat-item">
+                                        <div class="col-lg-3 col-md-6 factsDiv">
+                                            <div class="pzStatItem">
                                                 <h6>Geography</h6>
                                                 <p>EU/US first; APAC selectively.</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="pz-service-link pz-fl-wrap">
+                                    <div class="pzServiceLink pzFlWrap">
                                         <h4>Quick response</h4>
                                         <p>We aim for a first response within two business days. Share enough context so we can move fast.</p>
-                                        <button type="button" class="pz-btn pz-color-bg pz-fl-btn js-scroll" data-target="#sec3"><span>Share your deck</span></button>
+                                        <button type="button" class="pzBtn pzColorBg pzFlBtn jsScroll" data-target="#sec3"><span>Share your deck</span></button>
                                     </div>
                                 </div>
 
-                                <div class="pz-section-num"> <span>0</span>1. </div>
+                                <div class="pzSectionNum"> <span>0</span>1. </div>
                             </section>
-                            <div class="pz-separator pz-fl-wrap"><span></span></div>
+                            <div class="pzSeparator pzFlWrap"><span></span></div>
 
-                            <section class="pz-scroll-sec" id="sec2">
+                            <section class="pzScrollSec" id="sec2">
                                 <div class="container">
-                                    <div class="pz-section-title">
+                                    <div class="pzSectionTitle">
                                         <h3>What to include</h3>
                                         <p>Short and sharp is perfect. Links are fine.</p>
                                     </div>
 
-                                    <ul class="pz-pdcw-list pz-fl-wrap">
+                                    <ul class="pzPdcwList pzFlWrap">
                                         <li>Concise company overview (problem → solution → why now → differentiation).</li>
                                         <li>Short Loom product demo (or public demo URL).</li>
                                         <li>Website + docs or GitHub (if relevant).</li>
@@ -248,25 +239,25 @@
                                         <li>Optional: light data room (MRR/cohorts screenshot, top customers/pipeline, org plan & near-term hires).</li>
                                     </ul>
 
-                                    <div class="pz-service-link pz-fl-wrap">
-                                        <button type="button" class="pz-btn pz-color-bg pz-fl-btn js-scroll" data-target="#sec3"><span>Start your submission</span></button>
+                                    <div class="pzServiceLink pzFlWrap">
+                                        <button type="button" class="pzBtn pzColorBg pzFlBtn jsScroll" data-target="#sec3"><span>Start your submission</span></button>
                                     </div>
                                 </div>
 
-                                <div class="pz-section-num"> <span>0</span>2. </div>
+                                <div class="pzSectionNum"> <span>0</span>2. </div>
                             </section>
-                            <div class="pz-separator pz-fl-wrap"><span></span></div>
+                            <div class="pzSeparator pzFlWrap"><span></span></div>
 
-                            <section class="pz-scroll-sec" id="sec3">
+                            <section class="pzScrollSec" id="sec3">
                                 <div class="container">
-                                    <div class="pz-section-title">
+                                    <div class="pzSectionTitle">
                                         <h3>Pitch form</h3>
                                         <p>We just need the essentials to give you a fast, useful response.</p>
                                     </div>
 
-                                    <div class="pitch-card">
+                                    <div class="pitchCard">
                                         <form id="pitchForm" class="custom-form" method="post" action="/api/pitch/submit.php" enctype="multipart/form-data" novalidate>
-                                            <div class="pitch-grid">
+                                            <div class="pitchGrid">
                                                 <div class="column">
                                                     <label class="required">Full name</label>
                                                     <input type="text" name="full_name" required placeholder="Your name">
@@ -298,13 +289,13 @@
                                                     </select>
                                                 </div>
 
-                                                <div class="column round-size">
+                                                <div class="column roundSize">
                                                     <label class="required">Round size (target)</label>
                                                     <input type="text" name="round_size" required placeholder="Tell us your target round size">
                                                     <div class="hint">You can add cap table / terms in the notes.</div>
                                                 </div>
 
-                                                <div class="full deck-link">
+                                                <div class="full deckLink">
                                                     <label class="required">Deck link</label>
                                                     <input type="url" name="deck_url" required placeholder="https://link to your deck (GDrive/Dropbox/Notion)">
                                                     <div class="hint">Make sure link sharing is on (view or comment).</div>
@@ -320,7 +311,7 @@
                                                     <input type="url" name="demo_url" placeholder="https://loom.com/...">
                                                 </div>
 
-                                                <div class="column deck-file">
+                                                <div class="column deckFile">
                                                     <label>Optional deck upload (PDF/PPT up to 25MB)</label>
                                                     <input type="file" name="deck_file" accept=".pdf,.ppt,.pptx,application/pdf,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation">
                                                 </div>
@@ -331,15 +322,15 @@
                                                 </div>
 
                                                 <div class="full box">
-                                                    <label class="checkbox-container">
+                                                    <label class="checkboxContainer">
                                                         <input type="checkbox" name="consent" value="1" required>
-                                                        <span class="checkbox-box"></span>
+                                                        <span class="checkboxBox"></span>
                                                         I agree to the <a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms of Use</a>
                                                     </label>
                                                     <div class="hint">Questions? Email <a href="mailto:hello@partnrz.com">hello@partnrz.com</a>.</div>
                                                 </div>
 
-                                                <div class="hp-wrap">
+                                                <div class="hpWrap">
                                                     <label>Company Website</label>
                                                     <input type="text" name="company_website" autocomplete="off">
                                                 </div>
@@ -348,101 +339,101 @@
                                                 <input type="hidden" name="csrf" value="95650b595e926a8e3e6eec49271f0dbb313c25efdf58e8fcdec3e5e76721aa75">
                                             </div>
 
-                                            <button type="submit" class="pz-btn pz-color-bg pz-fl-btn" id="pitchSubmitBtn"><span>Send pitch</span></button>
-                                            <div class="success-msg" id="pitchSuccess"><i class="fas fa-check-circle"></i> Thanks — we’ll get back to you within two business days.</div>
-                                            <div class="error-msg" id="pitchError"><i class="fas fa-times-circle"></i> Something went wrong. Please try again or email <a href="mailto:hello@partnrz.com">hello@partnrz.com</a>.</div>
+                                            <button type="submit" class="pzBtn pzColorBg pzFlBtn" id="pitchSubmitBtn"><span>Send pitch</span></button>
+                                            <div class="successMsg" id="pitchSuccess"><i class="fas fa-check-circle"></i> Thanks — we'll get back to you within two business days.</div>
+                                            <div class="errorMsg" id="pitchError"><i class="fas fa-times-circle"></i> Something went wrong. Please try again or email <a href="mailto:hello@partnrz.com">hello@partnrz.com</a>.</div>
                                         </form>
                                     </div>
                                 </div>
 
-                                <div class="pz-section-num"> <span>0</span>3. </div>
+                                <div class="pzSectionNum"> <span>0</span>3. </div>
                             </section>
-                            <div class="pz-separator pz-fl-wrap"><span></span></div>
+                            <div class="pzSeparator pzFlWrap"><span></span></div>
 
-                            <section class="pz-scroll-sec" id="sec4">
+                            <section class="pzScrollSec" id="sec4">
                                 <div class="container">
-                                    <div class="pz-section-title">
+                                    <div class="pzSectionTitle">
                                         <h3>Our process & timeline</h3>
                                         <p>Short, structured, and collaborative.</p>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="pz-skillbar-wrap pz-animaper">
-                                                <div class="pz-skillbar-title"><span>Step 1 — Intro & deck</span></div>
-                                                <p>Submit your deck + links. If there’s a fit, we schedule a 20–30 min intro.</p>
-                                                <div class="pz-skillbar-title"><span>Step 2 — Light DD</span></div>
+                                            <div class="pzSkillbarWrap pzAnimaper">
+                                                <div class="pzSkillbarTitle"><span>Step 1 — Intro & deck</span></div>
+                                                <p>Submit your deck + links. If there's a fit, we schedule a 20–30 min intro.</p>
+                                                <div class="pzSkillbarTitle"><span>Step 2 — Light DD</span></div>
                                                 <p>Product demo, cohorts, pipeline, pricing, and hiring plan.</p>
-                                                <div class="pz-skillbar-title"><span>Step 3 — Work session</span></div>
+                                                <div class="pzSkillbarTitle"><span>Step 3 — Work session</span></div>
                                                 <p>We jam on roadmap, GTM, and edges we can unlock together.</p>
-                                                <div class="pz-skillbar-title"><span>Step 4 — Term sheet</span></div>
+                                                <div class="pzSkillbarTitle"><span>Step 4 — Term sheet</span></div>
                                                 <p>Simple, standard terms. We aim to be first-call and long-term.</p>
-                                                <div class="pz-skillbar-title"><span>Step 5 — Close & build</span></div>
+                                                <div class="pzSkillbarTitle"><span>Step 5 — Close & build</span></div>
                                                 <p>Hands-on post-investment: hiring, pricing, partnerships, and intros.</p>
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
-                                            <div class="pz-service-link first pz-fl-wrap">
+                                            <div class="pzServiceLink first pzFlWrap">
                                                 <h4>Speed & expectations</h4>
-                                                <ul class="pz-pdcw-list pz-fl-wrap">
+                                                <ul class="pzPdcwList pzFlWrap">
                                                     <li>First response within two business days.</li>
                                                     <li>Light diligence: product demo, cohorts, pipeline, pricing.</li>
-                                                    <li>Fast, standard terms when there’s a clear fit.</li>
+                                                    <li>Fast, standard terms when there's a clear fit.</li>
                                                 </ul>
                                             </div>
 
-                                            <div class="pz-service-link pz-fl-wrap last">
+                                            <div class="pzServiceLink pzFlWrap last">
                                                 <h4>Questions?</h4>
                                                 <p>Prefer email? Reach us at <a class="email" href="mailto:hello@partnrz.com">hello@partnrz.com</a>.</p>
-                                                <button type="button" class="pz-btn pz-color-bg pz-fl-btn js-scroll" data-target="#sec3"><span>Share your deck</span></button>
+                                                <button type="button" class="pzBtn pzColorBg pzFlBtn jsScroll" data-target="#sec3"><span>Share your deck</span></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="pz-section-num"> <span>0</span>4. </div>
+                                <div class="pzSectionNum"> <span>0</span>4. </div>
                             </section>
-                            <div class="pz-separator pz-fl-wrap"><span></span></div>
+                            <div class="pzSeparator pzFlWrap"><span></span></div>
 
-                            <section class="pz-scroll-sec" id="sec5">
+                            <section class="pzScrollSec" id="sec5">
                                 <div class="container">
-                                    <div class="pz-section-title">
+                                    <div class="pzSectionTitle">
                                         <h3>FAQs & exclusions</h3>
                                         <p>Clear expectations help everyone move faster.</p>
                                     </div>
 
-                                    <div class="pz-testimonials-wrap pz-fl-wrap">
-                                        <div class="pz-testimonials">
+                                    <div class="pzTestimonialsWrap pzFlWrap">
+                                        <div class="pzTestimonials">
                                             <div class="swiper-container">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
-                                                        <div class="pz-testi-body pz-fl-wrap">
-                                                            <div class="pz-testimonial-card pz-fl-wrap">
+                                                        <div class="pzTestiBody pzFlWrap">
+                                                            <div class="pzTestimonialCard pzFlWrap">
                                                                 <h3>Do you lead?</h3>
                                                                 <p>Yes, we often lead or co-lead and help assemble the round. We also do selective follow-ons.</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <div class="pz-testi-body pz-fl-wrap">
-                                                            <div class="pz-testimonial-card pz-fl-wrap">
+                                                        <div class="pzTestiBody pzFlWrap">
+                                                            <div class="pzTestimonialCard pzFlWrap">
                                                                 <h3>Board seats?</h3>
                                                                 <p>Lightweight governance. Board seat only when helpful to the founder and the company.</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <div class="pz-testi-body pz-fl-wrap">
-                                                            <div class="pz-testimonial-card pz-fl-wrap">
+                                                        <div class="pzTestiBody pzFlWrap">
+                                                            <div class="pzTestimonialCard pzFlWrap">
                                                                 <h3>Geography?</h3>
-                                                                <p>Primarily EU/US focus. We consider APAC if there’s a strong edge or presence.</p>
+                                                                <p>Primarily EU/US focus. We consider APAC if there's a strong edge or presence.</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <div class="pz-testi-body pz-fl-wrap">
-                                                            <div class="pz-testimonial-card pz-fl-wrap">
+                                                        <div class="pzTestiBody pzFlWrap">
+                                                            <div class="pzTestimonialCard pzFlWrap">
                                                                 <h3>Exclusions</h3>
                                                                 <p>We do not invest in: gambling, weapons, adult content, predatory lending, or projects misaligned with our ethics.</p>
                                                             </div>
@@ -453,404 +444,120 @@
                                         </div>
                                     </div>
 
-                                    <div class="pz-fl-wrap pz-client-list">
+                                    <div class="pzFlWrap pzClientList">
                                         <ul>
                                             <li><strong>Beyond capital:</strong> hiring support, pricing & packaging, enterprise sales playbooks, partner/intros, fundraising help.</li>
                                         </ul>
                                     </div>
 
-                                    <div class="pz-service-link pz-fl-wrap">
+                                    <div class="pzServiceLink pzFlWrap">
                                         <h4>Ready to talk?</h4>
-                                        <button type="button" class="pz-btn pz-color-bg pz-fl-btn js-scroll" data-target="#sec3"><span>Share your deck</span></button>
+                                        <button type="button" class="pzBtn pzColorBg pzFlBtn jsScroll" data-target="#sec3"><span>Share your deck</span></button>
                                     </div>
                                 </div>
 
-                                <div class="pz-section-num"> <span>0</span>5. </div>
-                            </section>            
-                        </div>       
+                                <div class="pzSectionNum"> <span>0</span>5. </div>
+                            </section>
+                        </div>
                     </div>
 
-                    <div class="pz-totop-btn pz-totop"><i class="fas fa-arrow-up"></i></div>
+                    <div class="pzTotopBtn pzTotop"><i class="fas fa-arrow-up"></i></div>
                 </div>
 
-                <div class="pz-scroll-notifer">
-                    <div class="pz-scroll-down-wrap ">
-                        <div class="pz-mousey">
-                            <div class="pz-scroller"></div>
+                <div class="pzScrollNotifer">
+                    <div class="pzScrollDownWrap ">
+                        <div class="pzMousey">
+                            <div class="pzScroller"></div>
                         </div>
                     </div>
                     <i class="fas fa-angle-down"></i>
                 </div>
 
-                <div class="pz-share-panel">
-                    <div class="pz-share-close"><i class="fas fa-arrow-left"></i></div>
-                    <div class="pz-share-container pz-fl-wrap  pz-is-share"></div>
-                </div>                  
+                <div class="pzSharePanel">
+                    <div class="pzShareClose"><i class="fas fa-arrow-left"></i></div>
+                    <div class="pzShareContainer pzFlWrap  pzIsShare"></div>
+                </div>
             </div>
 
-            <div class="pz-cursor">
-                <div class="pz-cursor-item"></div>
+            <div class="pzCursor">
+                <div class="pzCursorItem"></div>
             </div>
         </div>
 
-        <div id="pitchModal" class="pitch-modal" aria-hidden="true">
-            <div class="pitch-modal__overlay" data-close="1"></div>
-            <div class="pitch-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="pitchModalTitle">
-                <a class="pitch-modal__close" aria-label="Close" data-close="1">×</a>
-                <div class="pitch-modal__icon" id="pitchModalIcon" aria-hidden="true"></div>
+        <div id="pitchModal" class="pitchModal" aria-hidden="true">
+            <div class="pitchModalOverlay" data-close="1"></div>
+            <div class="pitchModalDialog" role="dialog" aria-modal="true" aria-labelledby="pitchModalTitle">
+                <a class="pitchModalClose" aria-label="Close" data-close="1">×</a>
+                <div class="pitchModalIcon" id="pitchModalIcon" aria-hidden="true"></div>
 
-                <h3 id="pitchModalTitle" class="pitch-modal__title">Message</h3>
-                <div id="pitchModalBody" class="pitch-modal__body"></div>
+                <h3 id="pitchModalTitle" class="pitchModalTitle">Message</h3>
+                <div id="pitchModalBody" class="pitchModalBody"></div>
 
-                <div class="pitch-modal__actions">
-                    <a class="pz-btn pz-color-bg pz-fl-btn" data-close="1"><span>Close</span></a>
+                <div class="pitchModalActions">
+                    <a class="pzBtn pzColorBg pzFlBtn" data-close="1"><span>Close</span></a>
                 </div>
             </div>
         </div>
 
-        <div id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie banner" style="display:none;">
-    <div class="cb-inner">
-        <div class="row">
-            <div class="col-sm-12">
-                <p class="cb-text">We use essential cookies to run this site. Analytics cookies are set only with your consent.</p>
-            </div>
+        <div id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie banner">
+            <div class="cbInner">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="cbText">We use essential cookies to run this site. Analytics cookies are set only with your consent.</p>
+                    </div>
 
-            <div class="col-sm-12">
-                <div class="cb-actions">
-                    <a class="pz-btn pz-fl-btn" id="cbReject" style="cursor:pointer; padding:15px 49px;"><span>Reject all</span></a>
-                    <a class="pz-btn pz-fl-btn" id="cbPrefs" style="cursor:pointer; padding:15px 42px;"><span>Preferences</span></a>
-                    <a class="pz-btn pz-color-bg pz-fl-btn" id="cbAccept" style="cursor:pointer; padding:15px 47px;"><span>Accept all</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="cookiePrefsModal" role="dialog" aria-modal="true" aria-labelledby="cpmTitle" style="display:none;">
-    <div class="cpm-dialog" role="document">
-        <div class="cpm-header">
-            <h3 id="cpmTitle">Cookie preferences</h3>
-            <button type="button" class="cpm-close" aria-label="Close">&times;</button>
-        </div>
-
-        <div class="cpm-body">
-            <div class="cpm-row">
-                <div style="text-align:left; font-size:14px;">
-                    <strong style="font-weight:600;">Essential</strong><br>
-                    Strictly necessary for the site to function.
-                </div>
-                <div><span class="cpm-badge">Always on</span></div>
-            </div>
-
-            <div class="cpm-row">
-                <div style="text-align:left; font-size:14px;">
-                    <strong style="font-weight:600;">Analytics</strong><br>
-                    Help us improve the site (page views, navigation patterns).
-                </div>
-
-                <div>
-                    <label class="cpm-switch">
-                        <input type="checkbox" id="consentAnalytics">
-                        <span class="cpm-slider" aria-hidden="true"></span>
-                    </label>
+                    <div class="col-sm-12">
+                        <div class="cbActions">
+                            <a class="pzBtn pzFlBtn" id="cbReject"><span>Reject all</span></a>
+                            <a class="pzBtn pzFlBtn" id="cbPrefs"><span>Preferences</span></a>
+                            <a class="pzBtn pzColorBg pzFlBtn" id="cbAccept"><span>Accept all</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="cpm-footer">
-            <a class="pz-btn pz-fl-btn" id="cpmReject" style="cursor:pointer;"><span>Reject</span></a>
-            <a class="pz-btn pz-color-bg pz-fl-btn" id="cpmSave" style="cursor:pointer;"><span>Save preferences</span></a>
+        <div id="cookiePrefsModal" role="dialog" aria-modal="true" aria-labelledby="cpmTitle">
+            <div class="cpmDialog" role="document">
+                <div class="cpmHeader">
+                    <h3 id="cpmTitle">Cookie preferences</h3>
+                    <button type="button" class="cpmClose" aria-label="Close">&times;</button>
+                </div>
+
+                <div class="cpmBody">
+                    <div class="cpmRow">
+                        <div class="cpmText">
+                            <strong>Essential</strong><br>
+                            Strictly necessary for the site to function.
+                        </div>
+                        <div><span class="cpmBadge">Always on</span></div>
+                    </div>
+
+                    <div class="cpmRow">
+                        <div class="cpmText">
+                            <strong>Analytics</strong><br>
+                            Help us improve the site (page views, navigation patterns).
+                        </div>
+
+                        <div>
+                            <label class="cpmSwitch">
+                                <input type="checkbox" id="consentAnalytics">
+                                <span class="cpmSlider" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cpmFooter">
+                    <a class="pzBtn pzFlBtn" id="cpmReject"><span>Reject</span></a>
+                    <a class="pzBtn pzColorBg pzFlBtn" id="cpmSave"><span>Save preferences</span></a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-        <script src="/assets/js/jquery.min.js?v=1.2"></script>
-        <script src="/assets/js/plugins.js?v=1.2"></script>
-        <script src="/assets/js/main.js?v=1.3"></script>
-        <script src="/assets/js/theme.js?v=1.2"></script>
-        <script src="/assets/js/menu.js?v=1.2"></script>
-        <script src="/assets/js/cookies.js?v=1.2"></script>
-        <script src="/assets/js/share.js?v=1.4"></script>
-
-        <script>
-            (function(){
-                function scrollToTarget(sel){
-                    const t = document.querySelector(sel);
-                    if(!t) return;
-                    const header = document.querySelector('.main-header');
-                    const offset = (header ? header.offsetHeight : 0) + 16;
-                    const top = t.getBoundingClientRect().top + window.pageYOffset - offset;
-                    window.scrollTo({ top, behavior: 'smooth' });
-                }
-
-                document.addEventListener('click', function(e){
-                    const btn = e.target.closest('.js-scroll');
-                    if(!btn) return;
-                    e.preventDefault();
-                    const target = btn.getAttribute('data-target') || '#sec3';
-                    scrollToTarget(target);
-                });
-
-                const f   = document.getElementById('pitchForm');
-                if(!f) return;
-
-                const btn = document.getElementById('pitchSubmitBtn');
-                const ok  = document.getElementById('pitchSuccess');
-                const err = document.getElementById('pitchError');
-
-                const maxMb  = 25;
-                const allowedExt = ['pdf','ppt','pptx'];
-
-                function ext(name){ return (name.split('.').pop() || '').toLowerCase(); }
-                function show(el){ el.style.display = 'block'; }
-                function hide(el){ el.style.display = 'none'; }
-
-                f.addEventListener('submit', function(e){
-                    e.preventDefault();
-
-                    hide(err); hide(ok);
-
-                    if (f.company_website && f.company_website.value.trim() !== '') {
-                        err.innerHTML = '<i class="fas fa-times-circle"></i> Spam detected.'; show(err); return;
-                    }
-
-                    const required = ['full_name','email','company','stage','round_size','deck_url','consent'];
-                    for (const name of required){
-                        const el = f.elements[name];
-                        if (!el) continue;
-                        if ((el.type === 'checkbox' && !el.checked) || (el.value || '').trim() === ''){
-                            err.innerHTML = '<i class="fas fa-times-circle"></i> Please fill all required fields.'; 
-                            show(err); el && el.focus(); return;
-                        }
-                    }
-
-                    const email = f.email.value.trim();
-                    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-                        err.innerHTML = '<i class="fas fa-times-circle"></i> Please enter a valid email address.';
-                        show(err); f.email.focus(); return;
-                    }
-
-                    const file = f.deck_file && f.deck_file.files && f.deck_file.files[0];
-                    if (file){
-                        const mb = file.size / (1024*1024);
-                        if (mb > maxMb){
-                            err.innerHTML = '<i class="fas fa-times-circle"></i> File too large (max ' + maxMb + 'MB).'; show(err); return;
-                        }
-                        if (!allowedExt.includes(ext(file.name))){
-                            err.innerHTML = '<i class="fas fa-times-circle"></i> Invalid file type. Allowed: ' + allowedExt.join(', ');
-                            show(err); return;
-                        }
-                    }
-
-                    //if (f.submitted_at) { f.submitted_at.value = Math.floor(Date.now()/1000); }
-
-                    const fd = new FormData(f);
-                    fd.append('ajax','1');
-
-                    btn.setAttribute('disabled','disabled');
-                    const oldLabel = btn.innerHTML;
-                    btn.innerHTML = '<span>Sending…</span>';
-
-                    fetch('/api/pitch/submit.php', {
-                        method: 'POST',
-                        body: fd,
-                        headers: {
-                            'X-Requested-With': 'XMLHttpRequest',
-                            'Accept': 'application/json'
-                        },
-                        credentials: 'same-origin'
-                    })
-                    .then(async (res) => {
-                        const ct = res.headers.get('content-type') || '';
-                        if (!ct.includes('application/json')) throw new Error('bad_response');
-                        return res.json();
-                    })
-                    .then((json) => {
-                        if (!json || json.ok !== true) throw new Error((json && json.error) ? json.error : 'unknown_error');
-
-                        if (json.csrf && f.csrf) f.csrf.value = json.csrf;
-
-                        f.deck_url.value = '';
-                        if (f.demo_url) f.demo_url.value = '';
-                        if (f.summary)  f.summary.value  = '';
-                        if (f.notes)    f.notes.value    = '';
-                        if (f.deck_file) f.deck_file.value = '';
-                        if (f.consent) f.consent.checked = false;
-
-                        window.showPitchModal('success', document.getElementById('pitchSuccess')?.innerHTML);
-                    })
-                    .catch((e) => {
-                        const map = {
-                            csrf_failed: 'Session expired. Please reload the page or try again.',
-                            too_fast: 'Please wait a moment before submitting.',
-                            rate_limited: 'Too many submissions today. Please try again later.',
-                            invalid_email: 'Please enter a valid email address.',
-                            invalid_url: 'One of the URLs looks invalid.',
-                            file_too_large: 'File too large (max ' + maxMb + 'MB).',
-                            invalid_extension: 'Invalid file type. Allowed: ' + allowedExt.join(', '),
-                            invalid_mime: 'The uploaded file type is not allowed.',
-                            spam_detected: 'Spam detected.',
-                            mkdir_failed: 'Internal storage error. Please email us instead.',
-                            move_failed: 'Internal storage error. Please email us instead.',
-                            upload_invalid_tmp: 'Upload failed. Please try again.',
-                            db_error_rate_limit: 'Temporary database issue while checking rate limit.',
-                            db_insert_failed: 'Temporary database issue while saving. Please try again.'
-                        };
-                        const msg = map[e.message] || 'Something went wrong. Please try again or email <a href="mailto:hello@partnrz.com">hello@partnrz.com</a>.';
-
-                        window.showPitchModal('error', '<i class="fas fa-times-circle"></i> ' + msg);
-                    })
-                    .finally(() => {
-                        btn.removeAttribute('disabled');
-                        btn.innerHTML = oldLabel;
-                    });
-                });
-            })();
-
-            document.addEventListener('DOMContentLoaded', function () {
-                const ok  = document.getElementById('pitchSuccess');
-                const err = document.getElementById('pitchError');
-                if (!ok || !err) return;
-
-                const params = new URLSearchParams(location.search);
-                const map = {
-                    csrf_failed:'Session expired. Please reload the page or try again.',
-                    too_fast:'Please wait a moment before submitting.',
-                    rate_limited:'Too many submissions today. Please try again later.',
-                    invalid_email:'Please enter a valid email address.',
-                    invalid_url:'One of the URLs looks invalid.',
-                    file_too_large:'File too large (max 25MB).',
-                    invalid_extension:'Invalid file type. Allowed: pdf, ppt, pptx.',
-                    invalid_mime:'The uploaded file type is not allowed.',
-                    spam_detected:'Spam detected.',
-                    mkdir_failed: 'Internal storage error. Please email us instead.',
-                    move_failed: 'Internal storage error. Please email us instead.',
-                    upload_invalid_tmp: 'Upload failed. Please try again.',
-                    db_error_rate_limit:'Temporary database issue while checking rate limit.',
-                    db_insert_failed:'Temporary database issue while saving. Please try again.'
-                };
-
-                if (params.has('success')) {
-                    window.showPitchModal('success', document.getElementById('pitchSuccess')?.innerHTML);
-                } 
-                else if (params.has('error')) {
-                    const code = params.get('error');
-                    const msg = map[code] || 'Something went wrong. Please try again or email <a href="mailto:hello@partnrz.com">hello@partnrz.com</a>.';
-                    window.showPitchModal('error', '<i class="fas fa-times-circle"></i> ' + msg);
-                }
-
-                if (params.has('success') || params.has('error')) {
-                    history.replaceState({}, '', location.pathname);
-                }
-            });
-
-            (function(){
-                const modal   = document.getElementById('pitchModal');
-                if (!modal) return;
-
-                const overlay = modal.querySelector('.pitch-modal__overlay');
-                const bodyEl  = document.getElementById('pitchModalBody');
-                const iconEl  = document.getElementById('pitchModalIcon');
-                const titleEl = document.getElementById('pitchModalTitle');
-                const okTpl   = document.getElementById('pitchSuccess');
-                const errTpl  = document.getElementById('pitchError');
-
-                const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
-                let lastFocus = null;
-                let modalOpen = false;
-
-                let prevScrollY = 0;
-                const blockers = { wheel: null, touch: null };
-
-                function trapFocus(e){
-                    if (!modalOpen || e.key !== 'Tab') return;
-                    const nodes = modal.querySelectorAll(FOCUSABLE);
-                    if (!nodes.length) return;
-                    const first = nodes[0], last = nodes[nodes.length - 1];
-                    if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
-                    else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
-                }
-
-                function lockScroll(){
-                    prevScrollY = window.scrollY || document.documentElement.scrollTop || 0;
-
-                    document.documentElement.classList.add('modal-open');
-                    document.body.classList.add('modal-open');
-
-                    document.body.style.position = 'fixed';
-                    document.body.style.top = `-${prevScrollY}px`;
-                    document.body.style.width = '100%';
-
-                    blockers.wheel = (e)=>{ if (modalOpen && !modal.contains(e.target)) e.preventDefault(); };
-                    blockers.touch = (e)=>{ if (modalOpen && !modal.contains(e.target)) e.preventDefault(); };
-                    window.addEventListener('wheel', blockers.wheel, { passive:false });
-                    window.addEventListener('touchmove', blockers.touch, { passive:false });
-                }
-
-                function unlockScroll(){
-                    if (blockers.wheel) window.removeEventListener('wheel', blockers.wheel, { passive:false });
-                    if (blockers.touch) window.removeEventListener('touchmove', blockers.touch, { passive:false });
-                    blockers.wheel = blockers.touch = null;
-
-                    document.body.style.position = '';
-                    document.body.style.top = '';
-                    document.body.style.width = '';
-
-                    document.documentElement.classList.remove('modal-open');
-                    document.body.classList.remove('modal-open');
-
-                    window.scrollTo(0, prevScrollY || 0);
-                }
-
-                function openModal(type, html){
-                    const ICONS = {
-                        success: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>',
-                        error:   '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>'
-                    };
-
-                    lastFocus = document.activeElement;
-
-                    modalOpen = true;
-                    lockScroll();
-
-                    modal.classList.add('is-open');
-                    modal.setAttribute('aria-hidden','false');
-
-                    iconEl.className = 'pitch-modal__icon ' + (type === 'success' ? 'success' : 'error');
-                    iconEl.innerHTML = ICONS[type] || '';
-                    titleEl.textContent = (type === 'success') ? 'Thanks!' : 'Something went wrong';
-                    bodyEl.innerHTML = html || ((type === 'success') ? (okTpl?.innerHTML || '') : (errTpl?.innerHTML || ''));
-
-                    (modal.querySelector('.pitch-modal__close') || modal.querySelector('[data-close]') || modal).focus();
-                }
-
-                function closeModal(){
-                    modal.classList.remove('is-open');
-                    modal.setAttribute('aria-hidden','true');
-
-                    modalOpen = false;
-                    unlockScroll();
-
-                    if (lastFocus) { try { lastFocus.focus(); } catch(e){} }
-                }
-
-                modal.addEventListener('click', (e)=>{
-                    if (e.target.closest('[data-close]')) { e.preventDefault(); closeModal(); }
-                });
-
-                if (overlay) {
-                    ['click','mousedown','mouseup'].forEach(evt=>{
-                      overlay.addEventListener(evt, (e)=>{ e.stopPropagation(); e.preventDefault(); }, true);
-                    });
-                }
-
-                document.addEventListener('keydown', (e)=>{
-                    if (!modalOpen) return;
-                    if (e.key === 'Escape') { e.preventDefault(); /* no-op */ }
-                    else if (e.key === 'Tab') { trapFocus(e); }
-                });
-
-                window.showPitchModal = (type, html) => openModal(type, html);
-            })();
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/app.js"></script>
     </body>
 </html>
