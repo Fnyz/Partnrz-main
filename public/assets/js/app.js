@@ -12,6 +12,7 @@
 
         var stored = localStorage.getItem(STORAGE_KEY);
         var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
         var startTheme = stored || (prefersDark ? 'dark' : 'light');
 
         if (root.getAttribute('data-theme') !== startTheme) {

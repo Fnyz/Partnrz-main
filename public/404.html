@@ -5,7 +5,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <script>
+        (function() {
+            var stored = localStorage.getItem('partnrz-theme');
+            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = stored || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+        </script>
         <title>Partnrz BV — Page not found</title>
         <meta name="description" content="The page you're looking for can't be found. Return to Partnrz home and explore our investment platform for founders and co-investors.">
         <link rel="canonical" href="/404">

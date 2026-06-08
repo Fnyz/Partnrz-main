@@ -18,7 +18,11 @@ body {
 	color: #000;
 	font-family: 'Mukta Vaani', sans-serif;
 }
-a { text-decoration: none; }
+a { 
+	text-decoration: none;
+	position: relative;
+	color: #000;
+}
 /* ---------Page preload----- ---------*/
 .pzLoader {
 	position:fixed;
@@ -236,7 +240,7 @@ a { text-decoration: none; }
 p {
 	font-size: 12px;
 	line-height: 24px;
-	padding-bottom: 10px;
+	/* padding-bottom: 10px; */
 	font-weight: 500;
     color: #5e646a;
     font-family: 'Roboto', sans-serif;
@@ -638,7 +642,7 @@ blockquote p {
 }
 .pzPageSubtitle span {
 	padding:10px 20px;
-	background:rgba(0,0,0,0.28);
+	background:rgba(0,0,0,0.1);
 	position:relative;
 	display:block;
 }
@@ -683,7 +687,8 @@ blockquote p {
 	transition: all 0.3s ease-in-out;
 }
 .pzBtn:after {
-	font-family: Font Awesome\ 5 Pro;
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
 	content: "\f105";
 	position: absolute;
 	top:16px;
@@ -855,7 +860,7 @@ nav.pzNavInner {
 }
 .pzSlidingMenu a {
 	float: left;
-	padding: 0 0 0 20px;
+	padding: 0 0 0 10px;
 	height: 40px;
 	line-height: 40px;
 	position: relative;
@@ -866,7 +871,7 @@ nav.pzNavInner {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	z-index:2;
-	width:100%;
+	width:170%;
 }
 .pzSlidingMenu a:hover {
 	color: rgba(255, 255, 255, 0.41);
@@ -997,8 +1002,8 @@ nav.pzNavInner {
 }
 .pzHeroWrap {
 	position:absolute;
-	top:30%;
-	left:20%;
+	top:24%;
+	left:10%;
 }
 .pzHeroWrap h1 {
 	text-align:left;
@@ -1009,16 +1014,18 @@ nav.pzNavInner {
 	position:relative;
 	line-height:66px;
 	font-family: 'Oswald', sans-serif;
+	margin:0;
 }
 .pzHeroWrap h4 {
-	padding-top:20px;
+	/* padding-top:20px; */
 	padding-right: 30px;
 	color:rgba(255,255,255,0.9);
 	text-align:justify;
-	float: left;
+	/* float: left; */
     max-width: 550px;
     font-size: 13px;
     font-weight: 600;
+	line-height: 20px;
 }
 .pzHeroHeader {
 	text-align:left;
@@ -1524,6 +1531,7 @@ nav.pzNavInner {
 	font-size: 10px;
 	text-transform: uppercase;
 	z-index:2;
+	padding: 3px 0px;
 }
 .pzHeroDecorNum:hover span {
 	top: 50px;
@@ -1537,8 +1545,8 @@ nav.pzNavInner {
 }
 .pzPromoWrap {
 	position:absolute;
-	bottom:0;
-	right:0;
+	bottom:0px;
+	right:0px;
 	width:600px;
 	background:#292929;
 	z-index:20;
@@ -1584,7 +1592,7 @@ nav.pzNavInner {
 .pzPromoTitle h4 {
 	font-size:17px;
 	font-weight:600;
-	padding:10px 0;
+	/* padding:10px 0; */
 }
 .pzPromoTitle p {
 	font-size:11px;
@@ -2133,8 +2141,8 @@ section.pzParallaxSection .pzBg {
 }
 .pzHeroVis.pzHeroWrap{
 	z-index:10;
-	left:150px;
-	top:26%
+	/* left:150px;
+	top:26% */
 }
 .pzHeroVis.pzHeroWrap h1 {
 	font-size:60px;
@@ -2406,6 +2414,7 @@ section.pzParallaxSection .pzBg {
 	font-family: 'Oswald', sans-serif;
 	text-transform:uppercase;
     line-height: 70px;
+	margin: 0;
 }
 .pzFixedColTitle h2:before {
 	content:'';
@@ -2420,6 +2429,7 @@ section.pzParallaxSection .pzBg {
 	text-align: left;
 	max-width:450px;
 	float:left;
+	margin: 0;
 }
 .pzFixedColDec {
 	position:absolute;
@@ -3431,7 +3441,7 @@ section.pzParallaxSection .pzBg {
 	right:50px;
 }
 .pzHeroWrap {
-	top:20%;
+	top:25%;
 }
 .pzScrollNotifer {
     top: 50px;

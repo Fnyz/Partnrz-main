@@ -255,7 +255,7 @@ if ($('.pzCursorItem').length) {
         mouse.y = e.pageY - (window.pageYOffset || document.documentElement.scrollTop);
     });
 
-    TweenMax.ticker.addEventListener('tick', function () {
+    gsap.ticker.add(function () {
         pos.x += (mouse.x - pos.x) * 0.15;
         pos.y += (mouse.y - pos.y) * 0.15;
         TweenMax.set(ball, { x: pos.x, y: pos.y });
