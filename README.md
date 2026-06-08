@@ -1,6 +1,6 @@
 # Partnrz BV — Static Website
 
-A static frontend website for **Partnrz BV**, an early-stage investment firm. Built with vanilla HTML, CSS, and JavaScript. All CSS class names use the custom `pz-` prefix and CSS variables use the `--partnrz-*` namespace to distinguish the codebase from its original template.
+A static frontend website for **Partnrz BV**, an early-stage investment firm. Built with vanilla HTML, CSS, and JavaScript. All CSS class names use the custom `pz` prefix and CSS variables use the `--partnrz-*` namespace.
 
 ## Pages
 
@@ -27,59 +27,65 @@ public/
 ├── 404.html
 └── assets/
     ├── css/
-    │   ├── plugins.css       ← Third-party plugin styles (untouched)
     │   ├── base.css          ← Base layout, typography, component styles (pz- classes)
-    │   ├── variables.css     ← Brand color rules (.pz-color-bg, etc.)
     │   └── partnrz.css       ← CSS custom properties (--partnrz-*), theme tokens,
     │                            site-specific overrides, cookie & modal styles
-    ├── fonts/                ← Font Awesome 5 locally hosted
+    ├── fonts/                ← Font Awesome woff2 files (unused; FA loaded via CDN)
     ├── img/
     │   ├── bg/               ← Hero background images (dark + light)
     │   ├── criteria/         ← Criteria section images
     │   ├── favicons/         ← favicon-dark.png, favicon-light.png
     │   └── og/dark/          ← Open Graph images per page
     └── js/
-        ├── jquery.min.js     ← jQuery (local, untouched)
-        ├── plugins.js        ← Third-party plugins: Swiper, share, isotope… (untouched)
-        ├── main.js           ← All UI interactions, animations, AJAX navigation
-        ├── theme.js          ← Dark / light mode toggle (localStorage)
-        ├── menu.js           ← Active nav link state based on URL
-        ├── cookies.js        ← Cookie consent banner & preferences modal
-        └── share.js          ← Social share panel (Facebook, X, LinkedIn, Pinterest, Tumblr)
+        ├── jquery.min.js     ← jQuery (local)
+        ├── main.js           ← UI interactions: animations, nav menu, share panel,
+        │                        slideshow, stat counters, scroll nav, cursor
+        └── app.js            ← App logic: dark/light theme toggle, active nav links,
+                                 cookie consent banner & preferences modal, share panel init,
+                                 pitch form submission
 ```
+
+## External Dependencies (CDN)
+
+| Library | Version | Purpose |
+|---|---|---|
+| Normalize.css | 8.0.1 | CSS reset |
+| Bootstrap Grid | 4.6.2 | Grid layout only |
+| Font Awesome | 6.5.1 | Icons (solid, brands) |
+| Swiper | 4.3.5 | Slideshow / carousel |
+| GSAP | 3.12.5 | Menu and cursor animations |
+| jQuery | local | DOM utilities, AJAX navigation |
 
 ## Features
 
 - Dark / light theme toggle — persisted in `localStorage` under key `partnrz-theme`
-- AJAX page transitions via `$.coretemp` — `#wrapper` content swaps without full reload
+- AJAX page transitions — `#wrapper` content swaps without full reload
 - Hero background image switches with theme (`partnrz-hero-dark.webp` / `partnrz-hero-light.webp`)
 - Logo switches with theme via CSS `content: var(--partnrz-logo)`
-- Animated stat counters on the home hero (Active investments, Focus sectors, Countries)
+- Animated stat counters on the home hero (IntersectionObserver-driven)
 - Slide-out social share panel — Facebook, X (Twitter), LinkedIn, Pinterest, Tumblr
-- Hamburger menu with slide-in nav overlay (Home, Criteria, Pitch)
+- Hamburger menu with GSAP-animated slide-in nav overlay (Home, Criteria, Pitch)
 - Desktop left sidebar with active link tracking
 - Cookie consent banner with Accept / Reject / Preferences (toggle per category)
-- Custom cursor
+- Custom cursor (desktop only)
 - Responsive layout
 
 ## CSS Architecture
 
-CSS loads in this order: `plugins.css` → `base.css` → `variables.css` → `partnrz.css`
+CSS loads in this order: CDN (normalize → bootstrap-grid → Font Awesome → Swiper) → `base.css` → `partnrz.css`
 
 | File | Responsibility |
 |---|---|
-| `plugins.css` | Third-party styles, never modified |
-| `base.css` | All structural and component rules; every selector uses the `pz-` prefix |
-| `variables.css` | Brand accent colour applied to `pz-color-bg` and related selectors |
-| `partnrz.css` | `:root` + `:root[data-theme="light"]` blocks defining all `--partnrz-*` tokens; site-specific overrides on top of base |
+| `base.css` | All structural and component rules; every selector uses the `pz` prefix |
+| `partnrz.css` | `:root` + `:root[data-theme="light"]` blocks defining all `--partnrz-*` tokens; page-specific overrides (criteria, pitch, cookies, privacy, terms); cookie banner & pitch modal styles |
 
 ## Theme Tokens (key variables)
 
 | Variable | Dark | Light |
 |---|---|---|
-| `--partnrz-teal` | `#49a0a5` | `#49a0a5` |
+| `--partnrz-teal` | `#49a0a5` | `#165d61` |
 | `--partnrz-bg` | `#1b4253` | `#ffffff` |
-| `--partnrz-overlay` | `#060f13` | `rgba(6,15,19,0.04)` |
+| `--partnrz-overlay` | `#060f13` | `rgba(255,255,255,0.04)` |
 | `--partnrz-hero-image` | `url(/assets/img/bg/partnrz-hero-dark.webp)` | `url(/assets/img/bg/partnrz-hero-light.webp)` |
 | `--partnrz-logo` | `url(/assets/img/logo-dark.webp)` | `url(/assets/img/logo-light.webp)` |
 
@@ -100,4 +106,4 @@ Then open `http://localhost:8080`.
 ## Fonts
 
 - **Raleway / Barlow** — Google Fonts CDN
-- **Font Awesome 5 Brands / Solid / Regular** — loaded locally from `assets/fonts/`
+- **Font Awesome 6 Free** — CDN (`cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1`)
