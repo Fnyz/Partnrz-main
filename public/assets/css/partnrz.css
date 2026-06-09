@@ -63,7 +63,7 @@
   --partnrz-share-wrapper-bg: #222222;
 }
 :root[data-theme="light"] {
-  --partnrz-teal: #165d61;
+  --partnrz-teal: #49a0a5;
 
   --partnrz-logo: url('/assets/img/logo-light.webp');
   --partnrz-hero-image: url('/assets/img/bg/partnrz-hero-light.webp');
@@ -1418,19 +1418,19 @@ html[data-theme="light"] .pzBtn:hover {
 .pzNavHolder.nhVis nav.pzNavInner {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 0.8s ease 0.6s, transform 0.8s ease 0.6s;
+    transition: opacity 0.36s ease 0.1s, transform 0.36s ease 0.1s;
 }
 .pzNavHolder.nhVis .pzNavHolderDec {
     left: 0;
-    transition: left 0.6s ease;
+    transition: left 0.35s ease;
 }
 .pzNavHolder.nhVis .pzNavFooter {
     bottom: 0;
-    transition: bottom 0.6s ease 0.3s;
+    transition: bottom 0.32s ease 0.08s;
 }
 .pzNavHolder.nhVis .pzNavHolderLine {
     top: 0;
-    transition: top 1.2s ease 0.3s;
+    transition: top 0.5s ease 0.08s;
 }
 
 /* ─── Utility: hidden states ─────────────────────────────────────── */

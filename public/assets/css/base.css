@@ -848,12 +848,15 @@ nav.pzNavInner {
 }
 .pzSlidingMenu ul {
 	margin: 0;
+	padding: 0;
+	list-style: none;
 	float: left;
 	width: 100%;
 	overflow: hidden;
 }
 .pzSlidingMenu li {
 	margin: 0;
+	list-style: none;
 	position: relative;
 	float: left;
 	width: 100%;

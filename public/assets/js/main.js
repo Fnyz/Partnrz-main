@@ -149,11 +149,11 @@ function initMenu() {
 
     function showMenu() {
         nh.addClass('nhVis');
-        nho.fadeIn(500);
-        TweenMax.to(nhwd, 0.6, { force3D: true, left: 0,    ease: Expo.easeInOut });
-        TweenMax.to(nfw,  0.6, { force3D: true, bottom: 0,  delay: 0.3, ease: Expo.easeInOut });
-        TweenMax.to(nhl,  1.2, { force3D: true, top: 0,     delay: 0.3, ease: Expo.easeInOut });
-        TweenMax.to(nnvw, 0.8, { force3D: true, opacity: 1, x: 0, delay: 0.6, ease: Expo.easeInOut });
+        nho.fadeIn(220);
+        TweenMax.to(nhwd, 0.35, { force3D: true, left: 0,    ease: Expo.easeOut });
+        TweenMax.to(nfw,  0.32, { force3D: true, bottom: 0,  delay: 0.08, ease: Expo.easeOut });
+        TweenMax.to(nhl,  0.5,  { force3D: true, top: 0,     delay: 0.08, ease: Expo.easeOut });
+        TweenMax.to(nnvw, 0.36, { force3D: true, opacity: 1, x: 0, delay: 0.1, ease: Expo.easeOut });
         nhw.removeClass('pzBtnWrap');
         nbw.addClass('cmenu');
     }
@@ -162,13 +162,13 @@ function initMenu() {
         TweenMax.to(nhl, 0.3, {
             force3D: true, top: '100%', ease: Expo.easeInOut,
             onComplete: function () {
-                TweenMax.to(nfw,  0.2, { force3D: true, bottom: '-70px', ease: Expo.easeInOut });
-                TweenMax.to(nnvw, 0.4, {
+                TweenMax.to(nfw,  0.18, { force3D: true, bottom: '-70px', ease: Expo.easeInOut });
+                TweenMax.to(nnvw, 0.24, {
                     force3D: true, opacity: 0, x: '50px', ease: Expo.easeInOut,
                     onComplete: function () {
-                        TweenMax.to(nhwd, 0.4, { force3D: true, left: '100%', ease: Expo.easeInOut });
+                        TweenMax.to(nhwd, 0.24, { force3D: true, left: '100%', ease: Expo.easeInOut });
                         nh.removeClass('nhVis');
-                        nho.fadeOut(500);
+                        nho.fadeOut(220);
                     }
                 });
             }
